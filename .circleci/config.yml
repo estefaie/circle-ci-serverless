@@ -6,6 +6,10 @@ jobs:
 
     working_directory: ~/circle-ci-serverless
 
+    package:
+      exclude:
+        - '**/*.test.ts'
+
     steps:
       - checkout
 
@@ -34,4 +38,4 @@ jobs:
 
       - run:
           name: Deploy application
-          command: sls deploy --stage pre
+          command: sls deploy --package /build --stage pre
