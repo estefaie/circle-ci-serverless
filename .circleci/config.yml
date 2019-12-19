@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Build typescript
           command: |
-            npm i -g tsc
+            sudo npm i -g tsc
             npm run tsc
 
       - run:
