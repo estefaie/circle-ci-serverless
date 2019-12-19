@@ -5,3 +5,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
+package:
+  include:
+    - 'build/**'
+  exclude:
+    - 'build/**/*.test.js'

@@ -6,12 +6,6 @@ jobs:
 
     working_directory: ~/circle-ci-serverless
 
-    package:
-      include:
-        - 'build/**'
-      exclude:
-        - 'build/**/*.test.js'
-
     steps:
       - checkout
 
