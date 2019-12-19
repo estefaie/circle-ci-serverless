@@ -18,7 +18,7 @@ jobs:
 
       - run:
           name: Build typescript
-            command: npm run tsc
+          command: npm run tsc
 
       - run:
           name: Install Serverless CLI and dependencies
